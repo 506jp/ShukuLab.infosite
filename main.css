@@ -1,3 +1,4 @@
+/* メニューの部分 */
 .overlay {
     width: 100%;
     height: 0;
@@ -82,6 +83,17 @@
       right: 35px;
     }
   }
+  .menubutton {
+    text-align: center;
+    font-size: 50px;
+    color: #fff;
+    background-color: #eb6100;
+  }
+  .menubutton:hover{
+    color: #fff;
+    background: #f56500;
+  }
+
 
 /*表題の中央揃え*/
   .center-marginwrap{
@@ -109,7 +121,7 @@ p.textTitle {
 
 .typeWriter > span {
   border-right: 2px solid;
-  animation: caret 0.5s steps(1) infinite;
+  animation: caret 0.2s steps(1) infinite;
 }
 
 @keyframes caret {
@@ -117,3 +129,32 @@ p.textTitle {
     border-color: transparent;
   }
 }
+
+/* 画像のスクロールCSS */
+.fade-in {
+    text-align: center;
+    opacity: 0;
+    transition-duration: 500ms;
+    transition-property: opacity, transform;
+  }
+  
+  .fade-in-up {
+    transform: translate(0, 50px);
+  }
+  
+  .fade-in-down {
+    transform: translate(0, -50px);
+  }
+  
+  .fade-in-left {
+    transform: translate(-50px, 0);
+  }
+  
+  .fade-in-right {
+    transform: translate(50px, 0);
+  }
+  
+  .scroll-in {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
